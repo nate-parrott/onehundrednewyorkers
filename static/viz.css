@@ -1,0 +1,95 @@
+
+.person {
+	position: absolute;
+	transition: left 0.2s ease-in-out, top 0.2s ease-in-out;
+}
+.person > * {
+	vertical-align: middle;
+	padding-left: 2px;
+	font-size: 0.5em;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px white;
+}
+
+.person .avatar {
+	font-size: 2em;
+	font-weight: normal;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0px;
+	overflow: hidden;
+	cursor: default;
+}
+
+#main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.axis {
+	font-weight: bold;
+}
+
+ul.segmentedControl {
+	padding: 0px;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0px;
+}
+ul.segmentedControl > li {
+	display: inline-block;
+	padding: 3px;
+	opacity: 0.3;
+}
+ul.segmentedControl > li.selected {
+	opacity: 1;
+}
+ul.segmentedControl > li:hover {
+	opacity: 1;
+}
+
+.axis {
+	z-index: 10;
+}
+
+.labelledGraph {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.xAxisLabel > div, .yAxisLabel > div {
+	position: absolute;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 1.4em; 
+	padding: 0.2em 1em;
+	white-space: pre;
+}
+
+.xAxisLabel, .yAxisLabel {
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+}
+
+.xAxisLabel {
+	right: 0.5em;
+	height: 0.5em;
+}
+
+.yAxisLabel {
+	top: 1.8em;
+	bottom: 0.5em;
+}
+
+.floating {
+	position: absolute;
+	background-color: white;
+	border: 1px solid gray;
+	padding: 4px;
+}
